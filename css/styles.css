@@ -95,7 +95,7 @@
   padding: 50px;
   border-radius: 25px;
   min-width: 50%;
-  max-width: 80%;
+  max-width: 60%;
   margin: 0 auto;
 }
 
@@ -156,6 +156,7 @@ form fieldset select {
   padding: 15px;
   border: 2px solid #ddd;
   border-radius: 5px;
+  font-size: 20px;
 }
 form .submit-btn button {
   background-color: #071c1f;
