@@ -1,4 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,500&display=swap");
+.header-wrapper {
+  background-color: #43aa5c;
+  color: #fff;
+  padding: 5px 0;
+  font-weight: 600;
+}
+.header-wrapper .about div:not(:last-child) {
+  padding-right: 30px;
+}
+.header-wrapper .about a {
+  color: #fff;
+}
+.header-wrapper .about i {
+  color: orangered;
+  padding-right: 5px;
+  font-size: 18px;
+}
+.header-wrapper .socials a {
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+}
+.header-wrapper .socials a:not(:last-child) {
+  padding-right: 15px;
+}
+
 .options-wrapper {
   border: 2px solid #ddd;
   border-radius: 5px;
@@ -19,12 +45,12 @@
   padding: 30px 0;
 }
 .options-wrapper .options_details:hover {
-  box-shadow: 0 0 1px #80b500;
-  border-color: #80b500;
+  box-shadow: 0 0 1px #43aa5c;
+  border-color: #43aa5c;
 }
 .options-wrapper .options_details.active {
-  border-color: #80b500;
-  background-color: rgba(127, 181, 0, 0.3137254902);
+  border-color: #43aa5c;
+  background-color: rgba(67, 170, 93, 0.3058823529);
 }
 .options-wrapper .options_icons {
   text-align: right;
@@ -48,7 +74,7 @@
   top: -4px;
   left: -1px;
   position: relative;
-  background-color: #80b500;
+  background-color: #43aa5c;
   content: "";
   display: inline-block;
   visibility: visible;
@@ -57,7 +83,7 @@
 .options-wrapper .apply-btn a {
   font-size: 18px;
   display: inline-block;
-  background-color: #80b500;
+  background-color: #43aa5c;
   border-radius: 50px;
   padding: 20px 50px;
   color: #fff;
@@ -97,6 +123,7 @@
   min-width: 50%;
   max-width: 60%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .social-accounts div {
@@ -163,6 +190,7 @@ form .submit-btn button {
   color: #fff;
   position: relative;
   transition: all 0.3s ease-in;
+  z-index: 1;
 }
 form .submit-btn button::before {
   content: "";
@@ -171,17 +199,18 @@ form .submit-btn button::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #80b500;
+  background-color: #43aa5c;
   border-radius: 25px;
   opacity: 0;
   transform: translateX(-50%);
+  transition: all 0.3s ease-in;
 }
-form .submit-btn button:hover button::before {
+form .submit-btn button:hover:before {
   opacity: 1;
   transform: translateX(0%);
 }
 form .agreement a {
-  color: #80b500;
+  color: #43aa5c;
 }
 
 * {
@@ -244,7 +273,7 @@ select {
   font-size: 300px;
   font-weight: 900;
   margin-bottom: 0;
-  color: #80b500;
+  color: #43aa5c;
 }
 
 .lg-heading {
@@ -274,7 +303,7 @@ select {
 .shop-btn,
 .more-btn {
   color: #fff;
-  background-color: #80b500;
+  background-color: #43aa5c;
   padding: 15px;
   font-weight: 600;
 }

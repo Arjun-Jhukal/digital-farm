@@ -5,6 +5,7 @@
   min-width: 50%;
   max-width: 60%;
   margin: 0 auto;
+  overflow: hidden;
 }
 .social-accounts {
   div {
@@ -81,6 +82,7 @@ form {
       color: #fff;
       position: relative;
       @include transition-ease;
+      z-index: 1;
 
       &::before {
         content: "";
@@ -93,8 +95,10 @@ form {
         border-radius: 25px;
         opacity: 0;
         transform: translateX(-50%);
+        @include transition-ease;
       }
-      &:hover button::before {
+
+      &:hover:before {
         opacity: 1;
         transform: translateX(0%);
       }

@@ -1,0 +1,31 @@
+.header-wrapper {
+  background-color: $primary-color;
+  color: $white;
+  padding: 5px 0;
+  font-weight: 600;
+
+  .about {
+    div:not(:last-child) {
+      padding-right: 30px;
+    }
+    a {
+      color: $white;
+    }
+    i {
+      color: orangered;
+      padding-right: 5px;
+      font-size: 18px;
+    }
+  }
+  .socials {
+    a {
+      display: inline-block;
+      color: $white;
+      font-size: 20px;
+
+      &:not(:last-child) {
+        padding-right: 15px;
+      }
+    }
+  }
+}
