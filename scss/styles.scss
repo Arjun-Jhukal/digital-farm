@@ -1,0 +1,100 @@
+@import "variables";
+@import "header";
+@import "footer";
+@import "mixins";
+@import "login";
+@import "register";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body {
+  font-family: $main-font-family;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 0.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+button {
+  background-color: transparent;
+}
+button,
+input {
+  outline: none;
+}
+
+// Utitlity Classes
+.xl-heading {
+  font-size: $xl-heading;
+  font-weight: 900;
+  margin-bottom: 0;
+  color: $primary-color;
+}
+.lg-heading {
+  font-size: $lg-heading;
+  font-weight: 900;
+}
+.md-heading {
+  font-size: $md-heading;
+  font-weight: 900;
+}
+.md-heading {
+  font-size: $sm-heading;
+  font-weight: 900;
+}
+
+.section-wrapper {
+  padding: 50px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.shop-btn,
+.more-btn {
+  color: $white;
+  background-color: $primary-color;
+  padding: 15px;
+  font-weight: 600;
+}
+.shop-btn:hover,
+.more-btn:hover {
+  background-color: $secondary-color;
+  color: $white;
+
+  @include transition-ease;
+}
