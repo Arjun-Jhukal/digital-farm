@@ -24,6 +24,7 @@
 }
 .options-wrapper .options_details.active {
   border-color: #80b500;
+  background-color: rgba(127, 181, 0, 0.3137254902);
 }
 .options-wrapper .options_icons {
   text-align: right;
@@ -89,6 +90,97 @@
     grid-auto-flow: column;
   }
 }
+.form-wrapper {
+  border: 2px solid #ddd;
+  padding: 50px;
+  border-radius: 25px;
+  min-width: 50%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.social-accounts div {
+  margin-bottom: 30px;
+}
+
+form button {
+  padding: 15px 0;
+  border: 1px solid #999;
+  border-radius: 25px;
+  font-weight: 600;
+  width: 100%;
+  transition: all 0.3s ease-in;
+}
+form .apple button {
+  background-color: #fff;
+}
+form .apple button:hover {
+  background-color: #f2f7f2;
+}
+form .google button {
+  background-color: #4285f4;
+}
+form .google button:hover {
+  background-color: #3367d6;
+}
+form .google button i {
+  color: red;
+}
+form .google button span {
+  color: #fff;
+}
+form .divider {
+  position: relative;
+}
+form .divider p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+form fieldset {
+  margin-bottom: 30px;
+}
+form fieldset label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+form fieldset label span {
+  color: red;
+}
+form fieldset input {
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+form .submit-btn button {
+  background-color: #071c1f;
+  color: #fff;
+  position: relative;
+  transition: all 0.3s ease-in;
+}
+form .submit-btn button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #80b500;
+  border-radius: 25px;
+  opacity: 0;
+  transform: translateX(-50%);
+}
+form .submit-btn button:hover button::before {
+  opacity: 1;
+  transform: translateX(0%);
+}
+form .agreement a {
+  color: #80b500;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -136,6 +228,7 @@ li {
 
 button {
   background-color: transparent;
+  border: none;
 }
 
 button,
