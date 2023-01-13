@@ -61,33 +61,42 @@
                 <div class="sign-form">
                   <fieldset class="name">
                     <label for="fullName">Full Name <span>*</span></label>
-                    <input type="text" name="fullName" id="name" class="w-100" placeholder="Your Name" required />
+                    <input type="text" name="fullName" id="name" placeholder="Your Name" required />
                   </fieldset>
                   <fieldset class="email">
                     <label for="email">Email <span>*</span></label>
-                    <input type="email" name="email" id="email" class="w-100" required />
+                    <input type="email" name="email" id="email" required />
                   </fieldset>
                   <fieldset class="Phone">
                     <label for="Phone">Phone <span>*</span></label>
-                    <input type="tel" name="Phone" id="phone" class="w-100" required />
+                    <input type="tel" name="Phone" id="phone" required />
+                  </fieldset>
+                  <fieldset>
+                    <select name="role ">
+                      <option value="1">Farmer</option>
+                      <option value="2">Consumer</option>
+                      <option value="3">Vendor</option>
+                    </select>
                   </fieldset>
                   <fieldset class="password">
                     <label for="password">Password <span>*</span></label>
-                    <input type="password" name="password" id="password" class="w-100" placeholder="New Password" required />
+                    <input type="password" name="password" id="password" placeholder="New Password" required />
                   </fieldset>
                   <fieldset class="re-password">
                     <label for="password">Retype Password <span>*</span></label>
-                    <input type="password" name="password" id="password" class="w-100" placeholder="Retype Password" required />
+                    <input type="password" name="password" id="password" placeholder="Retype Password" required />
                   </fieldset>
-                  <fieldset class="agreement">
+                  <div class="agreement mb-4">
                     <div class="agreement_1">
                       <label><input type="checkbox" checked /> Send me helpful emails to find rewarding work and job leads.</label>
+                    </div>
+                    <div class="agreement_2 mt-2">
                       <label>
                         <input type="checkbox" /> Yes, I understand and agree to the Upwork <a href="#">Terms and Services</a> , including the
                         <a href="#">Privacy Policy</a> .
                       </label>
                     </div>
-                  </fieldset>
+                  </div>
                   <div class="submit-btn text-center">
                     <button type="submit">Create My Account</button>
                   </div>

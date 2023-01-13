@@ -65,7 +65,9 @@ form {
         color: red;
       }
     }
-    input {
+    input,
+    select {
+      width: 100%;
       padding: 15px;
       border: $border1;
       border-radius: 5px;

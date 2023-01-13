@@ -150,7 +150,9 @@ form fieldset label {
 form fieldset label span {
   color: red;
 }
-form fieldset input {
+form fieldset input,
+form fieldset select {
+  width: 100%;
   padding: 15px;
   border: 2px solid #ddd;
   border-radius: 5px;
@@ -232,7 +234,8 @@ button {
 }
 
 button,
-input {
+input,
+select {
   outline: none;
 }
 
