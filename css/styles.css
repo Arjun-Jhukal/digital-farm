@@ -5,6 +5,9 @@
   padding: 30px;
   margin: 50px auto 0;
 }
+.options-wrapper .section-title h1.md-heading {
+  text-transform: capitalize;
+}
 .options-wrapper .options_details {
   padding: 30px;
   border: 2px solid #ddd;
@@ -17,6 +20,9 @@
 }
 .options-wrapper .options_details:hover {
   box-shadow: 0 0 1px #80b500;
+  border-color: #80b500;
+}
+.options-wrapper .options_details.active {
   border-color: #80b500;
 }
 .options-wrapper .options_icons {
@@ -48,12 +54,14 @@
   border: 2px solid white;
 }
 .options-wrapper .apply-btn a {
+  font-size: 18px;
   display: inline-block;
   background-color: #80b500;
   border-radius: 50px;
-  padding: 8px 15px;
+  padding: 20px 50px;
   color: #fff;
   font-weight: 600;
+  text-transform: capitalize;
 }
 
 @media (min-width: 728px) {
@@ -152,7 +160,7 @@ input {
   font-weight: 900;
 }
 
-.md-heading {
+.sm-heading {
   font-size: 22px;
   font-weight: 900;
 }
