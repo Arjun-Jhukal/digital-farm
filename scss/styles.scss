@@ -1,8 +1,7 @@
 @import "variables";
+@import "mixins";
 @import "header";
 @import "footer";
-@import "mixins";
-@import "login";
 @import "register";
 @import "signup";
 
@@ -60,6 +59,9 @@ select {
   outline: none;
 }
 
+img {
+  width: 100%;
+}
 // Utitlity Classes
 .xl-heading {
   font-size: $xl-heading;

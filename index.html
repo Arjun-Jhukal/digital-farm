@@ -68,17 +68,64 @@
       3. Account and cart details
       4. Weather report
     -->
-    <nav class="nav">
+
+    <!-- Menu section -->
+    <section class="nav_bar">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-4 col-md-3 col-lg-4 col-xl-4">
-            <a href="#" class="logo">
+        <div class="row justify-content-end align-items-center">
+          <div class="nav_bar_left">
+            <a href="index.html">
               <img src="./img/company/logo.png" alt="" />
             </a>
           </div>
+          <div class="nav_bar_center">
+            <ul class="menu_items d-flex justify-content-between d-none d-lg-flex">
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Vendors</a></li>
+              <li><a href="#">Farmers</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="nav_bar_right text-end">
+            <button class="search_bar pe-2">
+              <i class="fas fa-magnifying-glass"></i>
+            </button>
+            <button class="cart pe-2">
+              <i class="fas fa-cart-shopping"></i>
+              <span class="cart_items">2</span>
+            </button>
+            <div class="burger_menu">
+              <span class="burger_menu_btn"> </span>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
+    <!-- Mobile-Menu Items -->
+    <nav class="nav justify-content-end">
+      <ul class="nav_items">
+        <li class="nav_item">
+          <div class="mobile-header d-flex justify-content-between">
+            <a href="#">
+              <img src="./img/company/logo.png" alt="" />
+            </a>
+            <button class="close_nav">
+              <i class="fas fa-xmark fa-2x"></i>
+            </button>
+          </div>
+        </li>
+        <li class="nav_item"><a href="#" class="nav_link active">Home</a></li>
+        <li class="nav_item"><a href="#" class="nav_link">Product</a></li>
+        <li class="nav_item"><a href="#" class="nav_link">Farmers</a></li>
+        <li class="nav_item"><a href="#" class="nav_link">Vendors</a></li>
+        <li class="nav_item"><a href="#" class="nav_link">Blogs</a></li>
+        <li class="nav_item"><a href="#" class="nav_link">Contact</a></li>
+      </ul>
     </nav>
+
+    <!-- Seach section -->
     <!-- Product tab -->
     <!-- Offer list or Featured products -->
     <!-- Agricultural Product -->

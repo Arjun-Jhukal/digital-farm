@@ -16,3 +16,23 @@ function activeOption() {
     }
   }
 }
+
+// Mobile Menu
+var burgerMenu = document.querySelector(".burger_menu");
+var nav = document.querySelector(".nav");
+var navItems = document.querySelector(".nav_items");
+// var navItem = document.querySelectorAll(".nav_item");
+var closeMenu = document.querySelector(".close_nav");
+
+burgerMenu.addEventListener("click", showMenu);
+closeMenu.addEventListener("click", closeNav);
+function showMenu() {
+  nav.classList.add("active");
+  navItems.classList.add("active");
+  // navItem.forEach((item) => item.classList.add("active"));
+}
+function closeNav() {
+  nav.classList.remove("active");
+  navItems.classList.remove("active");
+  // navItem.forEach((item) => item.classList.remove("active"));
+}
