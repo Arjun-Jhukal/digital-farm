@@ -1,3 +1,8 @@
+.register {
+  .logo {
+    width: 10%;
+  }
+}
 .options-wrapper {
   border: $border1;
   border-radius: 5px;
@@ -64,7 +69,7 @@
     }
   }
   .apply-btn {
-    a {
+    button {
       font-size: 18px;
       display: inline-block;
       background-color: $primary-color;
@@ -73,6 +78,7 @@
       color: $white;
       font-weight: 600;
       text-transform: capitalize;
+      cursor: pointer;
     }
   }
 }
