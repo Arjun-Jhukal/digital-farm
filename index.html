@@ -245,8 +245,2341 @@
     </section>
 
     <!-- Seach section -->
-    <!-- Product tab -->
-    <!-- Offer list or Featured products -->
+
+    <!-- Product tab
+    1. Prodcut tab
+    2. product view
+    3. added to cart
+    4. added to wishlist
+    -->
+
+    <section class="product section-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-12">
+            <div class="product_category">
+              <div class="product_category_title d-flex justify-content-between align-items-center">
+                <i class="fa-solid fa-bars"></i>
+                <h1 class="sm-heading">Categories</h1>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <div class="tab-nav d-flex flex-column align-items-start">
+                <button class="tablinks" onclick="openTab(event,'firstTab') ">
+                  <i class="fas fa-bag-shopping"></i>
+                  Vegetable
+                </button>
+                <button class="tablinks" onclick="openTab(event,'secondTab') ">
+                  <i class="fa-solid fa-dumpster-fire"></i>
+                  Fruits
+                </button>
+                <button class="tablinks" onclick="openTab(event,'thirdTab') ">
+                  <i class="fa-solid fa-fish"></i>
+                  Fish and Seafood
+                </button>
+                <button class="tablinks" onclick="openTab(event,'fourthTab') ">
+                  <i class="fa-solid fa-shop"></i>
+                  Butter and Cream
+                </button>
+                <button class="tablinks" onclick="openTab(event,'fifthTab') ">
+                  <i class="fa-solid fa-jar"></i>
+                  Oil and Vinegar
+                </button>
+                <button class="tablinks" onclick="openTab(event,'sixthTab') ">
+                  <i class="fa-solid fa-hand-holding-droplet"></i>
+                  Breads
+                </button>
+                <button class="tablinks" onclick="openTab(event,'seventhTab') ">
+                  <i class="fa-solid fa-tractor"></i>
+                  Farm Machineries
+                </button>
+                <button class="tablinks" onclick="openTab(event,'eightTab') ">
+                  <i class="fa-solid fa-seedling"></i>
+                  Fertilizers
+                </button>
+                <button class="tablinks" onclick="openTab(event,'ninthTab') ">
+                  <i class="fa-solid fa-seedling"></i>
+                  Seed
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-12">
+            <div class="product_tab">
+              <div id="firstTab" class="tab-detail">
+                <div class="product_list">
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/vegetable/1.jpg" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Tomato</a>
+                      <del>NPR. 60 </del>
+                      <span>NPR. 40 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/vegetable/2.jpg" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Brinjle</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/vegetable/7.jpg" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Peas</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/vegetable/5.jpg" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Pumpkin</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/vegetable/5.jpg" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Pumpkin</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/vegetable/6.jpg" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Carrot</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/vegetable/8.jpg" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Potato</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/vegetable/7.jpg" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Peas</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="secondTab" class="tab-detail">
+                <div class="product_list">
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/fruits/2.jpg" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/fruits/3.jpg" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/fruits/4.jpg" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/fruits/5.jpg" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/fruits/6.jpg" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/fruits/7.jpg" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/fruits/8.jpg" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/fruits/9.jpg" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="thirdTab" class="tab-detail">
+                <div class="product_list">
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/seafood/1.jpg" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/seafood/2.jpg" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/seafood/3.jpg" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/seafood/4.jpg" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/seafood/5.jpg" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/seafood/6.jpg" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/seafood/7.jpg" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/seafood/8.jpg" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="fourthTab" class="tab-detail">
+                <div class="product_list">
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/seafood/1.jpg" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="fifthTab" class="tab-detail">
+                <div class="product_list">
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="sixthTab" class="tab-detail">
+                <div class="product_list">
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="seventhTab" class="tab-detail">
+                <div class="product_list">
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="eightTab" class="tab-detail">
+                <div class="product_list">
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="ninthTab" class="tab-detail">
+                <div class="product_list">
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="product_list_item">
+                    <div class="product_list_item_image">
+                      <a href="./agro-products.html">
+                        <img src="./img/product/10.png" alt="Kiwi" />
+                      </a>
+                    </div>
+                    <div class="product_list_item_detail">
+                      <a href="./agro-products.html" class="sm-heading">Onions</a>
+                      <del>NPR. 400 </del>
+                      <span>NPR. 400 </span>
+                    </div>
+                    <div class="product_list_item_hover">
+                      <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-eye"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-cart-shopping"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-heart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscription list -->
     <!-- Agricultural Product -->
     <!-- Farm Equipments -->
     <!-- Training blog -->

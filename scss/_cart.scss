@@ -6,9 +6,11 @@
   position: fixed;
   right: 0;
   top: 0;
+  z-index: 999;
   visibility: hidden;
   opacity: 0;
   transform: translateX(25vw);
+  background-color: $white;
   @include transition-ease;
 
   &.active {
