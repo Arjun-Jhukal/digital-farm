@@ -63,8 +63,6 @@ var cart = document.querySelector(".cart");
 var offCanvasCart = document.querySelector(".cart_wrapper");
 var closeCart = document.getElementById("close_cart");
 
-// Add or remove Cart items
-
 // show Cart function
 cart.addEventListener("click", (showOffCanvasCart) => {
   offCanvasCart.classList.add("active");
@@ -108,4 +106,60 @@ function scrollFunction() {
 function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+
+// View Product
+const viewIcons = document.querySelectorAll(".view_icon");
+const productView = document.querySelector(".product_view");
+const productViewBOx = document.querySelector(".product_view_box");
+const closeQuickView = document.querySelector(".close_quick_view");
+
+viewIcons.forEach(function (e) {
+  e.addEventListener("click", openModal);
+});
+closeQuickView.addEventListener("click", closeModal);
+
+function openModal() {
+  productView.classList.add("active");
+  productViewBOx.classList.add("active");
+}
+function closeModal() {
+  productView.classList.remove("active");
+  productViewBOx.classList.remove("active");
+}
+
+// Added to cart
+const addCartIcons = document.querySelectorAll(".add_cart_icon");
+const CartAddedMsg = document.querySelector(".mini_cart_added");
+const closeMsg = document.querySelector(".close_modal");
+
+addCartIcons.forEach(function (e) {
+  e.addEventListener("click", showCartMessage);
+});
+
+closeMsg.addEventListener("click", hideMessage);
+
+function showCartMessage() {
+  CartAddedMsg.classList.add("active");
+}
+function hideMessage() {
+  CartAddedMsg.classList.remove("active");
+}
+
+// Added to Wishlist
+
+const addWishIcon = document.querySelectorAll(".add_wish_icon");
+const wishMsg = document.querySelector(".wish_message");
+const closeWishMsg = document.querySelector(".close_wish_msg");
+
+addWishIcon.forEach(function (e) {
+  e.addEventListener("click", showWishMessage);
+});
+closeWishMsg.addEventListener("click", hideWishMsg);
+
+function showWishMessage() {
+  wishMsg.classList.add("active");
+}
+function hideWishMsg() {
+  wishMsg.classList.remove("active");
 }
