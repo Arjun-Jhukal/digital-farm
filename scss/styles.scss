@@ -1,11 +1,14 @@
 @import "variables";
 @import "mixins";
 @import "header";
-@import "footer";
 @import "register";
 @import "signup";
 @import "cart";
 @import "product";
+@import "sub";
+@import "blog";
+@import "footer";
+@import "search-view-wishlist";
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,500&display=swap");
 
@@ -33,13 +36,13 @@ h4,
 h5,
 h6 {
   font-weight: 500;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.2em;
 }
 a,
 a:visited,
 a:hover {
   text-decoration: none;
-  display: inline-block;
+  // display: inline-block;
 }
 
 ul {
@@ -62,7 +65,7 @@ select {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 // Utitlity Classes
 .xl-heading {
@@ -105,4 +108,24 @@ img {
   color: $white;
 
   @include transition-ease;
+}
+
+#back_to_top {
+  font-size: 20px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary-color;
+  color: $white;
+  @include transition-ease;
+
+  &:hover {
+    background-color: $primary-color;
+  }
 }

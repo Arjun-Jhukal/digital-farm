@@ -33,6 +33,10 @@
 .nav_bar {
   background-color: $white;
   padding: 15px 0;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 1;
 
   &_left {
     width: 20%;

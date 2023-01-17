@@ -42,6 +42,21 @@ function closeNav() {
   navItems.classList.remove("active");
 }
 
+// Search Popup
+const searchIcon = document.querySelector(".search-icon");
+const searchSpace = document.querySelector(".search-wrapper");
+const closeIcon = document.querySelector(".close_search");
+
+searchIcon.addEventListener("click", showSearch);
+closeIcon.addEventListener("click", closeSearch);
+
+function showSearch() {
+  searchSpace.classList.add("active");
+}
+function closeSearch() {
+  searchSpace.classList.remove("active");
+}
+
 // Offcanvas Cart
 
 var cart = document.querySelector(".cart");
@@ -75,4 +90,22 @@ function openTab(evt, categoryName) {
   evt.currentTarget.className += " active";
 }
 
-document.getElementById("defaultOpen").click();
+// Back to top
+let button = document.getElementById("back_to_top");
+button.addEventListener("click", backToTop);
+
+window.onscroll = function () {
+  scrollFunction();
+};
+function scrollFunction() {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    button.style.display = "block";
+  } else {
+    button.style.display = "none";
+  }
+}
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
