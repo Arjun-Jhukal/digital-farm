@@ -8,8 +8,12 @@
 @import "sub";
 @import "blog";
 @import "footer";
-@import "search-view-wishlist";
+@import "searchviewwishlist";
 @import "table";
+@import "contact-page";
+@import "track";
+@import "cartwishpage";
+@import "checkout";
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,500&display=swap");
 
@@ -105,6 +109,7 @@ img {
 }
 .shop-btn:hover,
 .more-btn:hover {
+  display: inline-block;
   background-color: $secondary-color;
   color: $white;
 
@@ -150,4 +155,7 @@ img {
       box-shadow: $box-shadow-1;
     }
   }
+}
+.member {
+  overflow-x: scroll;
 }

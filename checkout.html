@@ -247,6 +247,159 @@
       </div>
     </section>
 
+    <section class="checkout">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-12 col-md-12 col-sm-12">
+            <div class="section-title">
+              <h3>Billing Details</h3>
+            </div>
+            <div class="checkout_form">
+              <form class="billing_form">
+                <fieldset class="name">
+                  <label for="fname">First Name</label>
+                  <input type="text" name="fname" placeholder="First Name" required />
+                  <label for="lname">Last Name</label>
+                  <input type="text" name="lname" placeholder="Last Name" required />
+                </fieldset>
+                <fieldset class="email">
+                  <label for="email">Email Address</label>
+                  <input type="email" name="email" placeholder="Email Address" />
+                </fieldset>
+                <fieldset class="tel">
+                  <label for="tel">Phone Number</label>
+                  <input type="tel" name="tel" placeholder="Phone Number" required />
+                </fieldset>
+                <fieldset class="address">
+                  <label for="address"> Address</label>
+                  <input type="text" name="address" placeholder="Street Address" required />
+                  <input type="text" name="address" placeholder="City" required />
+                  <input type="text" name="address" placeholder="Street Address" required />
+                  <input type="text" name="address" placeholder="Appartment,Suit (optional)" />
+                </fieldset>
+
+                <button type="submit">Update</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-xl-6 col-md-6 col-sm-12 shopping_cart_bill">
+            <h4>Total Amount</h4>
+
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>Cart Subtotal</td>
+                  <td>$618.00</td>
+                </tr>
+                <tr>
+                  <td>Shipping and Handing</td>
+                  <td>$15.00</td>
+                </tr>
+                <tr>
+                  <td>Vat</td>
+                  <td>$00.00</td>
+                </tr>
+                <tr>
+                  <td><strong>Order Total</strong></td>
+                  <td><strong>$633.00</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="col-md-12 mt-60">
+            <div class="payment-method">
+              <h3>Choose a Payment Method</h3>
+              <ul class="accordion-box">
+                <li class="accordion block">
+                  <div class="acc-btn d-flex justify-content-between">
+                    <span>Credir Card / Debit Card</span>
+                    <div class="icon-outer"><i class="fas fa-angle-down"></i></div>
+                  </div>
+                  <div class="acc-content current" style="display: block">
+                    <div class="payment-info">
+                      <div class="row clearfix">
+                        <div class="col-lg-6 col-md-6 col-sm-12 column">
+                          <div class="field-input mb-3">
+                            <input type="text" class="form-control" name="name" placeholder="Name on the Card" required="" />
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 column">
+                          <div class="field-input mb-3">
+                            <input type="text" class="form-control" name="number" placeholder="Card Number" required="" />
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 column">
+                          <div class="field-input mb-3">
+                            <input type="text" class="form-control" name="date" placeholder="Expiry Date" required="" />
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 column">
+                          <div class="field-input mb-3">
+                            <input type="text" class="form-control" name="code" placeholder="Security Code" required="" />
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 column">
+                          <div class="field-input message-btn">
+                            <button type="submit" class="more-btn">
+                              <span>Make Payment</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion block">
+                  <div class="acc-btn d-flex justify-content-between">
+                    <span> Direct Bank Transfer</span>
+                    <div class="icon-outer"><i class="fas fa-angle-down"></i></div>
+                  </div>
+                  <div class="acc-content" style="display: none">
+                    <div class="payment-info">
+                      <p class="mb-0">
+                        Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be
+                        shipped until the funds have cleared in our account.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion block">
+                  <div class="acc-btn d-flex justify-content-between">
+                    <span> Pay Using Wallet</span>
+                    <div class="icon-outer"><i class="fas fa-angle-down"></i></div>
+                  </div>
+                  <div class="acc-content" style="display: none">
+                    <div class="payment-info">
+                      <p class="mb-0">
+                        Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be
+                        shipped until the funds have cleared in our account.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion block active-block">
+                  <div class="acc-btn d-flex justify-content-between active">
+                    <span> Other Payment</span>
+                    <div class="icon-outer"><i class="fas fa-angle-down"></i></div>
+                  </div>
+                  <div class="acc-content" style="display: none">
+                    <div class="payment-info">
+                      <p class="mb-0">
+                        Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be
+                        shipped until the funds have cleared in our account.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
@@ -357,7 +510,13 @@
       </div>
     </div>
 
-    <script src="./js/app.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

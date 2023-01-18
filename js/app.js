@@ -112,12 +112,14 @@ function backToTop() {
 const viewIcons = document.querySelectorAll(".view_icon");
 const productView = document.querySelector(".product_view");
 const productViewBOx = document.querySelector(".product_view_box");
-const closeQuickView = document.querySelector(".close_quick_view");
+const closeQuickView = document.querySelectorAll(".close_quick_view");
 
 viewIcons.forEach(function (e) {
   e.addEventListener("click", openModal);
 });
-closeQuickView.addEventListener("click", closeModal);
+closeQuickView.forEach(function (e) {
+  e.addEventListener("click", closeModal);
+});
 
 function openModal() {
   productView.classList.add("active");
@@ -132,15 +134,18 @@ const increaseCart = document.querySelector(".inc");
 const decreaseCart = document.querySelector(".dec");
 const cartProductValue = document.querySelector(".cart_quantity");
 
-increaseCart.addEventListener("click", (increase) => {
+increaseCart.addEventListener("click", increase);
+function increase() {
   cartProductValue.value++;
-});
-decreaseCart.addEventListener("click", (decrease) => {
+}
+decreaseCart.addEventListener("click", decrease);
+
+function decrease() {
   cartProductValue.value--;
   if (cartProductValue.value < 0) {
     cartProductValue.value = 0;
   }
-});
+}
 
 // Added to cart
 const addCartIcons = document.querySelectorAll(".add_cart_icon");
@@ -181,56 +186,24 @@ function hideWishMsg() {
   wishMsg.classList.remove("active");
 }
 
-// Pagination
+//Accordion Box
+if ($(".accordion-box").length) {
+  $(".accordion-box").on("click", ".acc-btn", function () {
+    var outerBox = $(this).parents(".accordion-box");
+    var target = $(this).parents(".accordion");
 
-// let thisPage = 1;
-// let limit = 12;
-// let itemList = document.querySelectorAll(".product_list .product_list_item");
+    if ($(this).hasClass("active") !== true) {
+      $(outerBox).find(".accordion .acc-btn").removeClass("active ");
+    }
 
-// function loadItem() {
-//   let beginGet = limit * (thisPage - 1);
-//   let endGet = limit * thisPage - 1;
-
-//   itemList.forEach((item, key) => {
-//     if (key >= beginGet && key <= endGet) {
-//       item.style.display = "block";
-//     } else {
-//       item.style.display = "none";
-//     }
-//   });
-//   listPage();
-// }
-
-// loadItem();
-// function listPage() {
-//   let count = Math.ceil(itemList.length / limit);
-//   document.querySelector(".pagination").innerHTML = "";
-
-//   if (thisPage != 1) {
-//     let prev = document.createElement("li");
-//     prev.innerText = "PREV";
-//     prev.setAttribute("onclick", "changePage(" + (thisPage - 1) + ")");
-//     document.querySelector(".pagination").appendChild(prev);
-//   }
-
-//   for (i = 1; i <= count; i++) {
-//     let newPage = document.createElement("li");
-//     newPage.innerText = i;
-//     if (i == thisPage) {
-//       newPage.classList.add("active");
-//     }
-//     newPage.setAttribute("onclick", "changePage(" + i + ")");
-//     document.querySelector(".pagination").appendChild(newPage);
-//   }
-
-//   if (thisPage != count) {
-//     let next = document.createElement("li");
-//     next.innerText = "NEXT";
-//     next.setAttribute("onclick", "changePage(" + (thisPage + 1) + ")");
-//     document.querySelector(".pagination").appendChild(next);
-//   }
-// }
-// function changePage(i) {
-//   thisPage = i;
-//   loadItem();
-// }
+    if ($(this).next(".acc-content").is(":visible")) {
+      return false;
+    } else {
+      $(this).addClass("active");
+      $(outerBox).children(".accordion").removeClass("active-block");
+      $(outerBox).find(".accordion").children(".acc-content").slideUp(300);
+      target.addClass("active-block");
+      $(this).next(".acc-content").slideDown(300);
+    }
+  });
+}
