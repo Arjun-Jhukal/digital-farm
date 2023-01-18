@@ -9,6 +9,7 @@
 @import "blog";
 @import "footer";
 @import "search-view-wishlist";
+@import "table";
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,500&display=swap");
 
@@ -127,5 +128,26 @@ img {
 
   &:hover {
     background-color: $primary-color;
+  }
+}
+
+.pagination {
+  justify-content: center;
+
+  li {
+    display: inline-block;
+    border: $border1;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &.active {
+      color: $white;
+      background-color: $primary-color;
+      border: transparent;
+      box-shadow: $box-shadow-1;
+    }
   }
 }

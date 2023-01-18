@@ -128,6 +128,20 @@ function closeModal() {
   productViewBOx.classList.remove("active");
 }
 
+const increaseCart = document.querySelector(".inc");
+const decreaseCart = document.querySelector(".dec");
+const cartProductValue = document.querySelector(".cart_quantity");
+
+increaseCart.addEventListener("click", (increase) => {
+  cartProductValue.value++;
+});
+decreaseCart.addEventListener("click", (decrease) => {
+  cartProductValue.value--;
+  if (cartProductValue.value < 0) {
+    cartProductValue.value = 0;
+  }
+});
+
 // Added to cart
 const addCartIcons = document.querySelectorAll(".add_cart_icon");
 const CartAddedMsg = document.querySelector(".mini_cart_added");
@@ -142,6 +156,7 @@ closeMsg.addEventListener("click", hideMessage);
 function showCartMessage() {
   CartAddedMsg.classList.add("active");
 }
+
 function hideMessage() {
   CartAddedMsg.classList.remove("active");
 }
@@ -149,12 +164,14 @@ function hideMessage() {
 // Added to Wishlist
 
 const addWishIcon = document.querySelectorAll(".add_wish_icon");
+
 const wishMsg = document.querySelector(".wish_message");
 const closeWishMsg = document.querySelector(".close_wish_msg");
 
 addWishIcon.forEach(function (e) {
   e.addEventListener("click", showWishMessage);
 });
+
 closeWishMsg.addEventListener("click", hideWishMsg);
 
 function showWishMessage() {
@@ -163,3 +180,57 @@ function showWishMessage() {
 function hideWishMsg() {
   wishMsg.classList.remove("active");
 }
+
+// Pagination
+
+// let thisPage = 1;
+// let limit = 12;
+// let itemList = document.querySelectorAll(".product_list .product_list_item");
+
+// function loadItem() {
+//   let beginGet = limit * (thisPage - 1);
+//   let endGet = limit * thisPage - 1;
+
+//   itemList.forEach((item, key) => {
+//     if (key >= beginGet && key <= endGet) {
+//       item.style.display = "block";
+//     } else {
+//       item.style.display = "none";
+//     }
+//   });
+//   listPage();
+// }
+
+// loadItem();
+// function listPage() {
+//   let count = Math.ceil(itemList.length / limit);
+//   document.querySelector(".pagination").innerHTML = "";
+
+//   if (thisPage != 1) {
+//     let prev = document.createElement("li");
+//     prev.innerText = "PREV";
+//     prev.setAttribute("onclick", "changePage(" + (thisPage - 1) + ")");
+//     document.querySelector(".pagination").appendChild(prev);
+//   }
+
+//   for (i = 1; i <= count; i++) {
+//     let newPage = document.createElement("li");
+//     newPage.innerText = i;
+//     if (i == thisPage) {
+//       newPage.classList.add("active");
+//     }
+//     newPage.setAttribute("onclick", "changePage(" + i + ")");
+//     document.querySelector(".pagination").appendChild(newPage);
+//   }
+
+//   if (thisPage != count) {
+//     let next = document.createElement("li");
+//     next.innerText = "NEXT";
+//     next.setAttribute("onclick", "changePage(" + (thisPage + 1) + ")");
+//     document.querySelector(".pagination").appendChild(next);
+//   }
+// }
+// function changePage(i) {
+//   thisPage = i;
+//   loadItem();
+// }

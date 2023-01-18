@@ -58,6 +58,29 @@
           }
         }
       }
+
+      .dropdown {
+        position: relative;
+        @include transition-ease;
+
+        &_items {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 200px;
+          background-color: $white;
+          padding: 15px 5px;
+          line-height: 1.5;
+          visibility: hidden;
+          opacity: 0;
+        }
+        &:hover {
+          .dropdown_items {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
     }
   }
   &_right {
