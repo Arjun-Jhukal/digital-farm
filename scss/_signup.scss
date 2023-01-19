@@ -15,14 +15,14 @@
     margin-bottom: 30px;
   }
 }
-form {
+.sign_form {
   button {
-    padding: 15px 0;
     border: 1px solid #999;
     border-radius: 25px;
     font-weight: 600;
     width: 100%;
     @include transition-ease;
+    padding: 15px 0;
   }
   .apple button {
     background-color: $white;

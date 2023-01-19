@@ -14,6 +14,7 @@
 @import "track";
 @import "cartwishpage";
 @import "checkout";
+@import "detail";
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,500&display=swap");
 
@@ -85,11 +86,11 @@ img {
 }
 .md-heading {
   font-size: $md-heading;
-  font-weight: 900;
+  font-weight: 600;
 }
 .sm-heading {
   font-size: $sm-heading;
-  font-weight: 900;
+  font-weight: 600;
 }
 
 .section-wrapper {
@@ -102,6 +103,7 @@ img {
 }
 .shop-btn,
 .more-btn {
+  display: inline-block;
   color: $white;
   background-color: $primary-color;
   padding: 15px;
@@ -109,7 +111,6 @@ img {
 }
 .shop-btn:hover,
 .more-btn:hover {
-  display: inline-block;
   background-color: $secondary-color;
   color: $white;
 
