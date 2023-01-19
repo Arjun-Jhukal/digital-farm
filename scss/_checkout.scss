@@ -1,3 +1,24 @@
+.checkout {
+  &_form {
+    .billing_form {
+      label,
+      input {
+        display: block;
+        padding: 5px 15px;
+      }
+      input {
+        margin-bottom: 15px;
+        width: 100%;
+        border: $border1;
+
+        &:focus {
+          border: $border2;
+        }
+      }
+    }
+  }
+}
+
 .accordion-box {
   position: relative;
 
