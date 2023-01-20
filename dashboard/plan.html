@@ -60,7 +60,7 @@
             <nav class="dash_menu">
               <ul class="dash_menu_items">
                 <li class="dash_menu_items_item">
-                  <a href="#">
+                  <a href="dashboard.html">
                     <i class="fa-solid fa-gauge"></i>
                     Dashboard
                   </a>
@@ -80,7 +80,7 @@
                     <li>
                       <a href="blog-add.html">Add New Blog</a>
                     </li>
-                    <li class="active">
+                    <li>
                       <a href="plan.html">Add New Plan</a>
                     </li>
                   </ul>
@@ -107,7 +107,41 @@
             </nav>
           </div>
           <div class="col-lg-10 col-md-12 col-sm-12">
-            <div class="container"></div>
+            <div class="container">
+              <div class="new_product">
+                <form action="" class="add_new_product">
+                  <fieldset class="name">
+                    <!-- <legend>Product Title</legend> -->
+                    <label for="plan_title">Plan Title</label>
+                    <input type="text" name="plan_title" placeholder="Add a Title" />
+                  </fieldset>
+                  <div class="price">
+                    <label>Price</label>
+                    <input type="text" />
+                  </div>
+
+                  <div class="new_product_category">
+                    <label for="product_category">Select The Category</label>
+                    <select name="product_category" id="">
+                      <option value="01">Weekly</option>
+                      <option value="02">Daily</option>
+                      <option value="03">14 days</option>
+                      <option value="04">Monthly</option>
+                    </select>
+                  </div>
+
+                  <ul class="new_product-highlight">
+                    <label for="highlight">Add plan Highlight</label>
+                    <li><input type="text" name="highlight" id="" /></li>
+                    <li><input type="text" name="highlight" id="" /></li>
+                    <li><input type="text" name="highlight" id="" /></li>
+                    <a href="#" class="more-highlight">Add More</a>
+                  </ul>
+
+                  <button type="submit" class="update">Update Plan</button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -60,7 +60,7 @@
             <nav class="dash_menu">
               <ul class="dash_menu_items">
                 <li class="dash_menu_items_item">
-                  <a href="#">
+                  <a href="dashboard.html">
                     <i class="fa-solid fa-gauge"></i>
                     Dashboard
                   </a>
@@ -107,7 +107,15 @@
             </nav>
           </div>
           <div class="col-lg-10 col-md-12 col-sm-12">
-            <div class="container"></div>
+            <div class="container">
+              <form class="form">
+                <label class="form__container" id="upload-container"
+                  >Choose or Drag & Drop Files
+                  <input class="form__file" id="upload-files" type="file" accept="image/*" multiple="multiple" />
+                </label>
+                <div class="form__files-container" id="files-list-container"></div>
+              </form>
+            </div>
           </div>
         </div>
       </div>

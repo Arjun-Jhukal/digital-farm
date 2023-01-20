@@ -60,7 +60,7 @@
             <nav class="dash_menu">
               <ul class="dash_menu_items">
                 <li class="dash_menu_items_item">
-                  <a href="#">
+                  <a href="dashboard.html">
                     <i class="fa-solid fa-gauge"></i>
                     Dashboard
                   </a>
@@ -80,7 +80,7 @@
                     <li class="active">
                       <a href="blog-add.html">Add New Blog</a>
                     </li>
-                    <li class="active">
+                    <li>
                       <a href="plan.html">Add New Plan</a>
                     </li>
                   </ul>
@@ -107,7 +107,27 @@
             </nav>
           </div>
           <div class="col-lg-10 col-md-12 col-sm-12">
-            <div class="container"></div>
+            <div class="container">
+              <div class="new_product">
+                <form action="" class="add_new_product">
+                  <fieldset class="name">
+                    <!-- <legend>Product Title</legend> -->
+                    <label for="blog_title">Blog Title</label>
+                    <input type="text" name="blog_title" placeholder="Add a Title" />
+                  </fieldset>
+
+                  <div class="new_product_desctiption">
+                    <label for="description">Blog Description</label>
+                    <textarea name="description" id="" cols="30" rows="10"></textarea>
+                  </div>
+                  <div class="new_product_image">
+                    <label for="prodcut-image">Featured Image</label>
+                    <input type="file" name="product-image" id="" />
+                  </div>
+                  <button type="submit" class="update">Submit To Review</button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
