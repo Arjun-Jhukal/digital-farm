@@ -533,6 +533,10 @@
 .product_category_title i {
   font-size: 20px;
 }
+.product_category button.active {
+  background-color: #071c1f;
+  color: #fff;
+}
 .product .tab-nav {
   color: #071c1f;
   font-weight: 300;
@@ -1705,6 +1709,83 @@
   font-size: 18px;
   font-weight: 600;
   color: #43aa5c;
+}
+
+.account_category {
+  border: 2px solid #ddd;
+}
+.account_category button,
+.account_category a {
+  color: #071c1f;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.account_category button:not(:last-child),
+.account_category a:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+.account_category button.active,
+.account_category a.active {
+  background-color: #071c1f;
+  color: #fff;
+}
+.account .tab-detail:not(:first-child) {
+  display: none;
+}
+.account .tab-detail span {
+  cursor: pointer;
+}
+.account .tab-detail .profile {
+  margin-bottom: 30px;
+}
+.account .tab-detail .profile img {
+  max-width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.account .tab-detail .address {
+  padding: 30px;
+  box-shadow: 0 1px 6px 0 rgba(54, 56, 61, 0.15);
+  width: 50%;
+}
+.account .tab-detail .address h4 {
+  display: inline-block;
+}
+.account .tab-detail .address address {
+  margin: 0;
+}
+.account .tab-detail .address h3 {
+  margin-top: 30px;
+}
+.account .tab-detail .address a {
+  color: #071c1f;
+}
+.account .tab-detail fieldset {
+  border: 2px solid #ddd;
+  padding: 30px;
+  margin-top: 30px;
+  text-align: left;
+}
+.account .tab-detail fieldset label {
+  font-size: 14px;
+  color: #999;
+  margin-top: 15px;
+}
+.account .tab-detail fieldset input {
+  width: 100%;
+  padding: 5px 15px;
+  border: 2px solid #ddd;
+}
+.account .tab-detail .btn-wrapper .submit-btn {
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: #071c1f;
+  color: #fff;
+  margin-top: 30px;
 }
 
 * {

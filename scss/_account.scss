@@ -1,0 +1,89 @@
+.account {
+  &_category {
+    border: $border1;
+
+    button,
+    a {
+      color: $secondary-color;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #ddd;
+      }
+
+      &.active {
+        background-color: $secondary-color;
+        color: $white;
+      }
+    }
+  }
+
+  .tab-detail:not(:first-child) {
+    display: none;
+  }
+  .tab-detail {
+    span {
+      cursor: pointer;
+    }
+    .profile {
+      margin-bottom: 30px;
+      img {
+        max-width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+
+    .address {
+      padding: 30px;
+      box-shadow: $box-shadow-1;
+      width: 50%;
+
+      h4 {
+        display: inline-block;
+      }
+      address {
+        margin: 0;
+      }
+      h3 {
+        margin-top: 30px;
+      }
+      a {
+        color: $secondary-color;
+      }
+    }
+
+    fieldset {
+      border: $border1;
+      padding: 30px;
+      margin-top: 30px;
+      text-align: left;
+
+      label {
+        font-size: 14px;
+        color: $ternary-color;
+        margin-top: 15px;
+      }
+
+      input {
+        width: 100%;
+        padding: 5px 15px;
+        border: $border1;
+      }
+    }
+
+    .btn-wrapper {
+      .submit-btn {
+        display: inline-block;
+        padding: 5px 15px;
+        background-color: $secondary-color;
+        color: $white;
+        margin-top: 30px;
+      }
+    }
+  }
+}

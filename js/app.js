@@ -185,3 +185,14 @@ function showWishMessage() {
 function hideWishMsg() {
   wishMsg.classList.remove("active");
 }
+
+// Account btn
+
+var profileBtn = document.querySelectorAll(".profile");
+
+profileBtn.forEach((item) => {
+  item.addEventListener("click", redirectBtn);
+});
+function redirectBtn() {
+  location.replace("../account.html");
+}
