@@ -134,13 +134,13 @@ const increaseCart = document.querySelector(".inc");
 const decreaseCart = document.querySelector(".dec");
 const cartProductValue = document.querySelector(".cart_quantity");
 
-increaseCart.addEventListener("click", increase);
-function increase() {
+increaseCart.addEventListener("click", increaseCartValue);
+function increaseCartValue() {
   cartProductValue.value++;
 }
-decreaseCart.addEventListener("click", decrease);
+decreaseCart.addEventListener("click", decreaseCartValue);
 
-function decrease() {
+function decreaseCartValue() {
   cartProductValue.value--;
   if (cartProductValue.value < 0) {
     cartProductValue.value = 0;
@@ -195,4 +195,16 @@ profileBtn.forEach((item) => {
 });
 function redirectBtn() {
   location.replace("../account.html");
+}
+
+// Detail page Image slider
+function changeImg(url, e) {
+  document.getElementById("slider_img").src = url;
+  let nodes = document.getElementById("thumb_img");
+  let img_child = nodes.children;
+
+  for (i = 0; i < img_child.length; i++) {
+    img_child[i].classList.remove("active");
+  }
+  e.classList.add("active");
 }

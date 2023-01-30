@@ -1652,6 +1652,12 @@
 .product_detail p {
   color: #999;
 }
+.product_detail .image_slider .image img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .product_detail .image_slider_nav {
   display: flex;
   justify-content: flex-start;
@@ -1938,4 +1944,9 @@ img {
 
 .category-btn {
   text-align: center;
+}
+
+.form-check-input:checked {
+  background-color: #43aa5c;
+  border-color: #43aa5c;
 }/*# sourceMappingURL=styles.css.map */

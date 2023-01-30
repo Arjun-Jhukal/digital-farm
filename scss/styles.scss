@@ -165,3 +165,8 @@ img {
 .category-btn {
   text-align: center;
 }
+
+.form-check-input:checked {
+  background-color: $primary-color;
+  border-color: $primary-color;
+}

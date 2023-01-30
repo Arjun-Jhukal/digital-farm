@@ -194,6 +194,14 @@
   }
 
   .image_slider {
+    .image {
+      img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+      }
+    }
+
     &_nav {
       display: flex;
       justify-content: flex-start;
